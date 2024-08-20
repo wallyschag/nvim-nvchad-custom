@@ -13,7 +13,7 @@ local plugins = {
         "rust-analyzer",
         "lua_ls",
         "clangd",
-        "ocamllsp",
+        "ocaml-lsp",
       }
     }
   }

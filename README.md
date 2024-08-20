@@ -15,6 +15,7 @@
     - If not, run :TSInstallSync {language} to install Treesitter for that language
 
 ## LSP ##
+    - Run :MasonInstall {LSP server} to install
     - Navigate to ~/.config/nvim/lua/custom/plugins.lua and add the language server you want installed
     - Navigate to ~/.config/nvim/lua/custom/configs/lspconfig.lua and add the configuration setup for the language server 
     

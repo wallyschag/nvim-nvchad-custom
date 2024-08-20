@@ -49,7 +49,7 @@ lspconfig.clangd.setup({
   capabilities = capabilities,
   cmd = { "clangd" },
   filetypes = { "c", "cpp", "h", "objc", "objcpp", "cuda", "proto" },
-  root_dir = root_pattern(
+  root_dir = lspconfig.util.root_pattern(
           '.clangd',
           '.clang-tidy',
           '.clang-format',
@@ -64,6 +64,6 @@ lspconfig.clangd.setup({
 lspconfig.ocamllsp.setup({
   cmd = { "ocamllsp" },
   filetypes = { "ocaml", "menhir", "ocamlinterface", "ocamllex", "reason", "dune" },
-  root_dir = root_pattern("*.opam", "esy.json", "package.json", ".git", "dune-project", "dune-workspace"),
+  root_dir = lspconfig.util.root_pattern("*.opam", "esy.json", "package.json", ".git", "dune-project", "dune-workspace"),
   capabilities = capabilities,
 })
